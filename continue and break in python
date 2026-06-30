@@ -1,0 +1,25 @@
+continue means skip button and break means exit button
+continue:
+
+fruits = ["apple", "banana", "cherry", "date"]
+for x in fruits:
+    if x == "banana":
+        continue
+    print(x)
+
+output: 
+apple
+cherry
+date
+
+break:
+
+fruits = ["apple", "banana", "cherry", "date"]
+
+for x in fruits:
+    if x == "banana":
+        break
+    print(x)
+
+Output: 
+apple
