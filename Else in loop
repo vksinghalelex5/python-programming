@@ -1,0 +1,34 @@
+# Initialize the variable to match the start of range(6)
+x = 0
+# Loop while x is less than 6
+while x < 6:
+    print(x)
+    x += 1  # Increment x by 1 each turn
+else:
+    print("Finally finished!")
+
+output:
+
+
+0
+1
+2
+3
+4
+5
+Finally finished!
+
+
+for x in range(6):
+  print(x)
+else:
+  print("Finally finished!")
+
+output:
+0
+1
+2
+3
+4
+5
+Finally finished!
