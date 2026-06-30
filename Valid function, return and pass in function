@@ -1,0 +1,34 @@
+Function names follow the same rules as variable names in Python:
+
+A function name must start with a letter or underscore
+A function name can only contain letters, numbers, and underscores
+Function names are case-sensitive (myFunction and myfunction are different)
+
+Valid function names:
+calculate_sum()
+_private_function()
+myFunction2()
+
+return statement: print is always used to return what has been printed.
+
+def get_greeting():
+  return "Hello from a function"
+
+# This will display the returned text on your screen
+print(get_greeting())
+
+
+
+def get_greeting():
+  return "Hello from a function"
+
+message = get_greeting()
+print(message)
+
+
+pass statement in function: 
+
+Function definitions cannot be empty. If you need to create a function placeholder without any code, use the pass statement:
+
+def my_function():
+  pass
