@@ -1,6 +1,54 @@
+Nested for loop:
+
 adj = ["red", "big", "tasty"]
 fruits = ["apple", "banana", "cherry"]
 
 for x in adj:
   for y in fruits:
     print(x, y)
+
+output: 
+
+red apple
+red banana
+red cherry
+big apple
+big banana
+big cherry
+tasty apple
+tasty banana
+tasty cherry
+
+nested while loop: 
+
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+
+# 1. Initialize the outer loop index
+i = 0
+
+# Outer loop controls the adjectives
+while i < len(adj):
+    
+    # 2. CRITICAL: Reset the inner loop index for every new adjective
+    j = 0
+    
+    # Inner loop controls the fruits
+    while j < len(fruits):
+        print(adj[i], fruits[j])
+        j += 1  # Move to the next fruit
+        
+    i += 1  # Move to the next adjective
+
+output:
+
+red apple
+red banana
+red cherry
+big apple
+big banana
+big cherry
+tasty apple
+tasty banana
+tasty cherry
+
